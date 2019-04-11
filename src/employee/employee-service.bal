@@ -12,9 +12,7 @@ map<json> employeeMap = {};
     push:true,
     registry:"index.docker.io/fabiowso2",
     name:"ballerina-cicd-demo",
-    tag:"1.0",
-    username: "fabiowso2",
-    password: "WSaf0302."
+    tag:"1.0"
 }
 @http:ServiceConfig { basePath: "/employee" }
 service employeeMgt on httpListener {
