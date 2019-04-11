@@ -9,11 +9,11 @@ map<json> employeeMap = {};
 
 // RESTful service.
 @docker:Config {
-    push:true,
     registry:"index.docker.io/fabiowso2",
     name:"ballerina-cicd-demo",
     tag:"1.0"
 }
+
 @http:ServiceConfig { basePath: "/employee" }
 service employeeMgt on httpListener {
 
